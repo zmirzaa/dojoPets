@@ -26,6 +26,25 @@ class Pet:
         print("Hehe")
         return self 
 
+
+class Lion(Pet): 
+    def __init__(self, name, tricks, location):
+        super().__init__(self, name, tricks)
+        self.location = location 
+    
+    def sleep(self):
+        super().sleep()
+        return self 
+    
+    def eat(self):
+        super().eat()
+        return self 
+    
+    def play(self):
+        super().play()
+        return self 
+
+
 class Ninja:
     def __init__(self, firstName, lastName, treats, petFood):
         self.firstName = firstName 
@@ -47,10 +66,14 @@ class Ninja:
         self.pet.noise()
         return self 
 
-bunny = Pet("Bunny", "doggie", "he could fly")
+bunny = Pet("Bunny", "doggie", "fly")
 zee = Ninja("Zainab", "Mirza", ['bacon', 'bone'], 'steak')
-
 zee.feed()
 zee.walk()
 zee.bathe()
 
+
+lolo = Lion("lolo", "super speed", "safari desert")
+lolo.play()
+lolo.sleep()
+lolo.eat()
