@@ -46,12 +46,12 @@ class Lion(Pet):
 
 
 class Ninja:
-    def __init__(self, firstName, lastName, treats, petFood):
+    def __init__(self, firstName, lastName, treats, pet, petFood):
         self.firstName = firstName 
         self.lastName = lastName
         self.treats = treats 
         self.petfood = petFood 
-        self.pet = Pet("Bunny", "doggie", "he could fly") 
+        self.pet = pet 
     
     def walk(self):
         self.pet.play()
@@ -67,7 +67,7 @@ class Ninja:
         return self 
 
 bunny = Pet("Bunny", "doggie", "fly")
-zee = Ninja("Zainab", "Mirza", ['bacon', 'bone'], 'steak')
+zee = Ninja("Zainab", "Mirza", ['bacon', 'bone'], bunny, 'steak')
 zee.feed()
 zee.walk()
 zee.bathe()
